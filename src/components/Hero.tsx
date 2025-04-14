@@ -27,6 +27,10 @@ const Hero: React.FC<HeroProps> = ({
   gfg,
   naukri,
 }) => {
+  const whatsappLink = `https://wa.me/${phone.replace(
+    /[^+0-9]/g,
+    ''
+  )}?text=Hello, I'm contacting you through your portfolio website.`;
   return (
     <section className="text-center py-12 animate-fade-in">
       <Image
@@ -56,6 +60,13 @@ const Hero: React.FC<HeroProps> = ({
           rel="noopener noreferrer"
           className="text-accent hover:underline">
           GitHub
+        </a>
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline">
+          WhatsApp
         </a>
       </div>
       <div className="mt-4 flex justify-center space-x-4">
