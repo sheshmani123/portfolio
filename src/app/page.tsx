@@ -102,7 +102,6 @@ I'm always learning, building, and creating — whether it's through code or con
       <Hero {...heroData} />
       <About aboutMe={aboutMe} />
       <Skills {...skillsData} />
-      <Projects projects={projectsData} />
       <Education />
       <Certifications certifications={certificationsData} />
       <Freelancing />
@@ -123,3 +122,4 @@ I'm always learning, building, and creating — whether it's through code or con
     </div>
   );
 }
+
