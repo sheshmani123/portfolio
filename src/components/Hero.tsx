@@ -1,5 +1,5 @@
-
 import { Icons } from '@/components/icons';
+import Image from 'next/image';
 
 interface HeroProps {
   name: string;
@@ -13,6 +13,13 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ name, title, phone, email, linkedin, github }) => {
   return (
     <section className="text-center py-12">
+      <Image
+        src="/images/profile.jpg" // Path to your image in the public directory
+        alt="Sheshmani Chauhdary"
+        width={200} // Adjust the width as needed
+        height={200} // Adjust the height as needed
+        className="rounded-full mx-auto mb-4" // Optional: Add styling for rounded corners and centering
+      />
       <h1 className="text-3xl font-bold">{name}</h1>
       <p className="text-lg text-muted-foreground">{title}</p>
       <div className="mt-4">
