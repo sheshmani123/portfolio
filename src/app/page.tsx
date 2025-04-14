@@ -15,7 +15,7 @@ import {useEffect, useState} from 'react';
 
 export default function Home() {
   const heroData = {
-    name: 'Sheshmani Chauhdary',
+    name: 'Sheshmani chaudhary',
     title: 'Full-Stack Web Developer',
     phone: '+91 9696995616',
     email: 'sheshmanic952@gmail.com',
@@ -122,4 +122,3 @@ I'm always learning, building, and creating — whether it's through code or con
     </div>
   );
 }
-

@@ -54,7 +54,7 @@ const Hero: React.FC<HeroProps> = ({
       <div className="relative z-10">
         <Image
           src="https://res.cloudinary.com/dqrnqfiwn/image/upload/v1718177804/IMG_20240612_154232_qvwb7f.jpg"
-          alt="Sheshmani Chauhdary"
+          alt="Sheshmani chaudhary"
           width={150}
           height={150}
           className="rounded-full mx-auto mb-4 shadow-md transition-transform transform hover:scale-105"
@@ -160,5 +160,3 @@ const Hero: React.FC<HeroProps> = ({
 };
 
 export default Hero;
-
-    
