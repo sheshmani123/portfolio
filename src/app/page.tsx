@@ -74,7 +74,7 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
       <Certifications certifications={certificationsData} />
       <section className="py-8 text-center">
         <Button variant="outline">
-          <a href="/originalResume.pdf" download>
+          <a href="https://drive.google.com/file/d/1f3_W5bMJNIet-dV4v8KONB_NYowNyRvP/view?usp=sharing" download>
             Download Resume
           </a>
         </Button>
@@ -82,4 +82,5 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
     </div>
   );
 }
+
 
