@@ -1,3 +1,4 @@
+
 import { Icons } from '@/components/icons';
 import Image from 'next/image';
 
@@ -18,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ name, title, phone, email, linkedin, github
         alt="Sheshmani Chauhdary"
         width={200} // Adjust the width as needed
         height={200} // Adjust the height as needed
-        className="rounded-full mx-auto mb-4" // Optional: Add styling for rounded corners and centering
+        className="rounded-full mx-auto mb-4 shadow-md transition-transform transform hover:scale-105" // Optional: Add styling for rounded corners and centering
       />
       <h1 className="text-3xl font-bold">{name}</h1>
       <p className="text-lg text-muted-foreground">{title}</p>
