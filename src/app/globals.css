@@ -6,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   /* Add dark gradient background */
-  background-image: url('/img/cyberpunk-city.jpg'); /* Use the GIF as the background */
+  background-image: url('/img/black_background.jpg'); /* Use a sleek, tech-inspired background */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
