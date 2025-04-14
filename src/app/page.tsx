@@ -1,3 +1,4 @@
+
 'use client';
 
 import Hero from '@/components/Hero';
@@ -25,9 +26,13 @@ export default function Home() {
     naukri: 'https://naukri.com/mnjuser/profile',
   };
 
-  const aboutMe = `Full-stack web developer experienced in building scalable web applications using the MERN stack.
-Solved over 150 DSA problems on platforms like LeetCode and GFG.
-Certified in Full-Stack Web Development, Cloud Computing, and Spring Boot.`;
+  const aboutMe = `I’m a passionate Full-Stack Web Developer with hands-on experience in building modern, scalable web apps using the MERN stack (MongoDB, Express.js, React, Node.js). Along with NoSQL, I’m also skilled in SQL-based databases and backend development using ASP.NET and C#.
+
+As a tech enthusiast, I also create engaging and simplified tech content on Instagram, sharing the latest updates on AI tools, coding tips, smart devices, and more.
+
+I've solved 350+ Data Structures & Algorithms questions on platforms like LeetCode and GeeksforGeeks, which has helped me build a strong problem-solving foundation.
+
+I'm always learning, building, and creating — whether it's through code or content`;
 
   const skillsData = {
     frontend: ['React', 'Next.js', 'Tailwind CSS'],
