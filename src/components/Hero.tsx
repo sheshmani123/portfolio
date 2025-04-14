@@ -51,10 +51,10 @@ const Hero: React.FC<HeroProps> = ({
       />
       <div className="relative z-10">
         <Image
-          src="https://picsum.photos/200/200"
+          src="https://lh3.googleusercontent.com/pw/ABLVV87mWkS6vM6yU2N7Ztk4KeVjWQEr0Yh2J394_h6g1q-Vn9T9ubp1eZ8S51uNyu007tS2N-z4Wz6-cgbV6LrT-3mH74m0b-4mGvQ-0q8-0qQ8q2_q8-0q8q2_q8"
           alt="Sheshmani Chauhdary"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           className="rounded-full mx-auto mb-4 shadow-md transition-transform transform hover:scale-105"
         />
         <h1 className="text-3xl font-bold">{name}</h1>
