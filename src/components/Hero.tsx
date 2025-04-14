@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({
       />
       <div className="relative z-10">
         <Image
-          src="https://lh3.googleusercontent.com/pw/ABLVV87mWkS6vM6yU2N7Ztk4KeVjWQEr0Yh2J394_h6g1q-Vn9T9ubp1eZ8S51uNyu007tS2N-z4Wz6-cgbV6LrT-3mH74m0b-4mGvQ-0q8-0qQ8q2_q8-0q8q2_q8"
+          src="https://res.cloudinary.com/dqrnqfiwn/image/upload/w_150,h_150,c_thumb,g_face/v1718177804/IMG_20240612_154232_qvwb7f.jpg"
           alt="Sheshmani Chauhdary"
           width={150}
           height={150}
