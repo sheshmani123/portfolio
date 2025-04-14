@@ -27,7 +27,7 @@ const Education = () => {
         </p>
       </div>
       <div>
-        <h3 className="text-xl font-semibold">
+        <h3 className="text-xl font-semibold flex items-center gap-2">
           <School className="h-5 w-5" /> High School &amp; Intermediate – U.P. Board (Hindi Medium)
         </h3>
         <p className="text-muted-foreground">Jagdish Singh Inter College</p>
