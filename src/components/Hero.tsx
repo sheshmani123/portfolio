@@ -12,7 +12,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ name, title, phone, email, linkedin, github }) => {
   return (
-    <section className="text-center py-12 animate-fade-in">
+    <section className="text-center py-12">
       <Image
         src="https://picsum.photos/200/200" // Path to your image in the public directory
         alt="Sheshmani Chauhdary"
@@ -20,8 +20,8 @@ const Hero: React.FC<HeroProps> = ({ name, title, phone, email, linkedin, github
         height={200} // Adjust the height as needed
         className="rounded-full mx-auto mb-4 shadow-md transition-transform transform hover:scale-105" // Optional: Add styling for rounded corners and centering
       />
-      <h1 className="text-3xl font-bold">{name}</h1>
-      <p className="text-lg text-muted-foreground">{title}</p>
+      <h1 className="text-3xl font-bold animate-fade-in">{name}</h1>
+      <p className="text-lg text-muted-foreground animate-fade-in">{title}</p>
       <div className="mt-4">
         <p>Phone: {phone}</p>
         <p>Email: {email}</p>

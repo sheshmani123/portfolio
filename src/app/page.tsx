@@ -5,6 +5,7 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
 import { Button } from '@/components/ui/button';
+import TiltCard from '@/components/TiltCard';
 
 export default function Home() {
   const heroData = {
@@ -64,7 +65,9 @@ Certified in Full-Stack Web Development, Spring Boot, Cloud Computing.`;
 
   return (
     <div className="container mx-auto py-10">
-      <Hero {...heroData} />
+      <TiltCard>
+        <Hero {...heroData} />
+      </TiltCard>
       <About aboutMe={aboutMe} />
       <Skills {...skillsData} />
       <Projects projects={projectsData} />
