@@ -6,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   /* Add dark gradient background */
-  background-color: black; /* Use the GIF as the background */
+  background-image: url('/img/cyberpunk-city.jpg'); /* Use the GIF as the background */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -73,3 +73,4 @@ body {
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
 }
+
