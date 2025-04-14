@@ -5,7 +5,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   /* Add dark gradient background */
-  background: linear-gradient(to bottom, #000000, #333333);
+  background-image: url('/video/marvel_bg.gif'); /* Use the GIF as the background */
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
