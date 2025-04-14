@@ -1,4 +1,3 @@
-
 import { Icons } from '@/components/icons';
 import Image from 'next/image';
 
@@ -13,9 +12,9 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ name, title, phone, email, linkedin, github }) => {
   return (
-    <section className="text-center py-12">
+    <section className="text-center py-12 animate-fade-in">
       <Image
-        src="/images/profile.jpg" // Path to your image in the public directory
+        src="https://picsum.photos/200/200" // Path to your image in the public directory
         alt="Sheshmani Chauhdary"
         width={200} // Adjust the width as needed
         height={200} // Adjust the height as needed

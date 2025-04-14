@@ -1,10 +1,10 @@
-
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const heroData = {
@@ -70,6 +70,13 @@ Certified in Full-Stack Web Development, Spring Boot, Cloud Computing.`;
       <Projects projects={projectsData} />
       <Education {...educationData} />
       <Certifications certifications={certificationsData} />
+      <section className="py-8 text-center">
+        <Button variant="outline">
+          <a href="/resume.pdf" download>
+            Download Resume
+          </a>
+        </Button>
+      </section>
     </div>
   );
 }
