@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Education = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 animate-fade-in">
       <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
         <School className="h-6 w-6" /> Education
       </h2>

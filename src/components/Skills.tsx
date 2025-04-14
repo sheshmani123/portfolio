@@ -11,7 +11,7 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ frontend, backend, languages, tools }) => {
   return (
-    <section className="py-8">
+    <section className="py-8 animate-fade-in">
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div>

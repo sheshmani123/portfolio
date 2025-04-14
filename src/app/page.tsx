@@ -1,11 +1,16 @@
+'use client';
+
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
-import { Button } from '@/components/ui/button';
-import TiltCard from '@/components/TiltCard';
+import {Button} from '@/components/ui/button';
+import {ContactForm} from '@/components/ContactForm';
+import {Badge} from '@/components/ui/badge';
+import {Freelancing} from '@/components/Freelancing';
+import {useEffect, useState} from 'react';
 
 export default function Home() {
   const heroData = {
@@ -15,36 +20,49 @@ export default function Home() {
     email: 'sheshmanic952@gmail.com',
     linkedin: 'https://www.linkedin.com/in/sheshmani-chauhary-891878266/',
     github: 'https://github.com/sheshmani123',
+    leetcode: 'https://leetcode.com/u/user2023Jx/',
+    gfg: 'https://geeksforgeeks.org/user/sheshmaniecq0/',
+    naukri: 'https://naukri.com/mnjuser/profile',
   };
 
-  const aboutMe = `Full-stack web developer skilled in building scalable web apps using the MERN stack.
-Strong problem-solving skills; solved 150+ coding problems on LeetCode and GFG.
-Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
+  const aboutMe = `Full-stack web developer experienced in building scalable web applications using the MERN stack.
+Solved over 150 DSA problems on platforms like LeetCode and GFG.
+Certified in Full-Stack Web Development, Cloud Computing, and Spring Boot.`;
 
   const skillsData = {
     frontend: ['React', 'Next.js', 'Tailwind CSS'],
     backend: ['Node.js', 'Express.js', 'Prisma'],
-    languages: ['Java (advanced)', 'Python', 'C', 'JavaScript', 'SQL', 'TypeScript', 'HTML/CSS'],
+    languages: [
+      'Java (Advanced)',
+      'Python',
+      'C',
+      'SQL',
+      'JavaScript',
+      'TypeScript',
+      'HTML/CSS',
+    ],
     tools: ['Docker', 'GCP', 'AWS', 'VS Code', 'IntelliJ', 'Eclipse'],
   };
 
   const projectsData = [
     {
       title: 'E-commerce Book Website',
-      techStack: ['React', 'MongoDB', 'Node.js'],
-      description: 'Developed a fully functional book-selling web app with user login, payment integration, and inventory management.',
+      techStack: ['React', 'Node.js', 'MongoDB'],
+      description:
+        'Built a full-stack book-selling app with login, payment, and inventory management',
       liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
     },
     {
       title: 'Food Ordering Web App',
       techStack: ['MERN', 'Stripe'],
-      description: 'Created a responsive food ordering website with secure Stripe payments and a dynamic admin panel.',
+      description:
+        'Created a dynamic food ordering platform with cart system and Stripe payment gateway',
       liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
     },
     {
       title: 'Paytm Clone',
       techStack: ['React', 'Node.js', 'PostgreSQL'],
-      description: 'Built a Paytm-inspired app with real-time payment flow and PostgreSQL DB integration.',
+      description: 'Cloned Paytm’s core UI and integrated secure backend logic',
       liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
     },
   ];
@@ -52,17 +70,27 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
   const certificationsData = [
     {
       name: 'AWS Cloud Technical Essentials – Coursera',
-      link: 'https://www.coursera.org/account/accomplishments/records/UQ5TX9N18GCQ',
+      link:
+        'https://www.coursera.org/account/accomplishments/records/UQ5TX9N18GCQ',
     },
     {
       name: 'Full-Stack Web Development – Udemy',
-      link: 'https://www.udemy.com/certificate/UC-fb261059-9789-4313-a84d-92227f71bc66/',
+      link:
+        'https://www.udemy.com/certificate/UC-fb261059-9789-4313-a84d-92227f71bc66/',
     },
     {
       name: 'Meta UX Designer Certificate – Coursera',
-      link: 'https://www.coursera.org/account/accomplishments/records/LXWS34Y993CO',
+      link:
+        'https://www.coursera.org/account/accomplishments/records/LXWS34Y993CO',
     },
   ];
+  const downloadLink =
+    'https://drive.google.com/uc?export=download&id=1f3_W5bMJNIet-dV4v8KONB_NYowNyRvP';
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="container mx-auto py-10">
@@ -72,15 +100,21 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
       <Projects projects={projectsData} />
       <Education />
       <Certifications certifications={certificationsData} />
+      <Freelancing />
       <section className="py-8 text-center">
         <Button variant="outline">
-          <a href="https://drive.google.com/file/d/1f3_W5bMJNIet-dV4v8KONB_NYowNyRvP/view?usp=sharing" download>
-            Download Resume
-          </a>
+          {isMounted && (
+            <a
+              href={downloadLink}
+              download="Sheshmani_Chauhdary_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Download Resume
+            </a>
+          )}
         </Button>
       </section>
+      <ContactForm />
     </div>
   );
 }
-
-

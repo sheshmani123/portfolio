@@ -9,7 +9,7 @@ interface CertificationsProps {
 
 const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
   return (
-    <section className="py-8">
+    <section className="py-8 animate-fade-in">
       <h2 className="text-2xl font-bold mb-4">Certifications</h2>
       <ul>
         {certifications.map((cert, index) => (
