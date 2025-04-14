@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({
       {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
-          src="/video/batman.mp4"
+          src="/video/marvel_bg.mp4"
           autoPlay
           loop
           muted
@@ -104,7 +104,7 @@ const Hero: React.FC<HeroProps> = ({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round">
-              <path d="M2.81 21.44l1.24-4.54A9.21 9.21 0 0 1 3 12 10 10 0 1 1 13 2.13a9 9 0 0 1 7 2.83 8 8 0 0 1 1.79 2.38 1 1 0 0 1-.21 1.35l-.97.87a8 8 0 0 1-3.41.92 1 1 0 0 0-.74.08l-2-.55a8 8 0 0 1-2.34-2.43 1 1 0 0 0-1.45-.08l-.91.83a8 8 0 0 1-.45 3.33L2 21a1 1 0 0 0 .81.44z"></path>
+              <path d="M2.81 21.44l1.24-4.54A9.21 9.21 0 0 1 3 12 10 10 0 1 1 13 2.13a9 9 0 0 1 7 2.83 8 8 0 0 1 1.79 2.38 1 1 0 0 1-.21 1.35l-.97.87a8 8 0 0 1-3.41.92 1 1 0 0 0-.74.08l-2-.55a8 8 0 0 1-2.34-2.43 1 1 0 0 0-1.45-.08l-.91.83a8 8 0 0 1-.45 3.33L2 21a1 1 0 0 .81.44z"></path>
             </svg>
             WhatsApp
           </a>
@@ -138,3 +138,5 @@ const Hero: React.FC<HeroProps> = ({
 };
 
 export default Hero;
+
+    
