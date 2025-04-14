@@ -52,13 +52,7 @@ const Hero: React.FC<HeroProps> = ({
         <div className="absolute inset-0 bg-black opacity-40" />
       </div>
       <div className="relative z-10">
-        <Image
-          src="https://res.cloudinary.com/dqrnqfiwn/image/upload/v1718177804/IMG_20240612_154232_qvwb7f.jpg"
-          alt="Sheshmani chaudhary"
-          width={150}
-          height={150}
-          className="rounded-full mx-auto mb-4 shadow-md transition-transform transform hover:scale-105"
-        />
+        
         <h1 className="text-3xl font-bold">{name}</h1>
         <p className="text-lg text-muted-foreground">{title}</p>
         <div className="mt-4">
