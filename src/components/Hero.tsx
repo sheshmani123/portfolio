@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({
       <div
         className="absolute inset-0 bg-black opacity-20 z-0"
         style={{
-          backgroundImage: `url('https://picsum.photos/1920/1080')`,
+          backgroundImage: `url('https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_ratio/1x1_standard_small.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
