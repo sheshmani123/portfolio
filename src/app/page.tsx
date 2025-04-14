@@ -49,14 +49,6 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
     },
   ];
 
-  const educationData = {
-    degree: 'B.E. in Computer Science & Engineering',
-    institution: 'Acharya Institute of Technology, Bengaluru',
-    years: '2021 – 2025',
-    highSchool: 'Jagdish Singh Inter College, UP Board',
-    highSchoolDetails: '10th: 86%, 12th: 81%',
-  };
-
   const certificationsData = [
     {
       name: 'AWS Cloud Technical Essentials – Coursera',
@@ -78,7 +70,7 @@ Certified in Full-Stack Development, Spring Boot, and Cloud Computing.`;
       <About aboutMe={aboutMe} />
       <Skills {...skillsData} />
       <Projects projects={projectsData} />
-      <Education {...educationData} />
+      <Education />
       <Certifications certifications={certificationsData} />
       <section className="py-8 text-center">
         <Button variant="outline">
