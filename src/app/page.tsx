@@ -3,7 +3,6 @@
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
 import {Button} from '@/components/ui/button';
@@ -47,29 +46,6 @@ I'm always learning, building, and creating — whether it's through code or con
     ],
     tools: ['Docker', 'GCP', 'AWS', 'VS Code', 'IntelliJ', 'Eclipse'],
   };
-
-  const projectsData = [
-    {
-      title: 'E-commerce Book Website',
-      techStack: ['React', 'Node.js', 'MongoDB'],
-      description:
-        'Built a full-stack book-selling app with login, payment, and inventory management',
-      liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
-    },
-    {
-      title: 'Food Ordering Web App',
-      techStack: ['MERN', 'Stripe'],
-      description:
-        'Created a dynamic food ordering platform with cart system and Stripe payment gateway',
-      liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
-    },
-    {
-      title: 'Paytm Clone',
-      techStack: ['React', 'Node.js', 'PostgreSQL'],
-      description: 'Cloned Paytm’s core UI and integrated secure backend logic',
-      liveLink: 'https://leafy-monstera-6920ea.netlify.app/',
-    },
-  ];
 
   const certificationsData = [
     {
