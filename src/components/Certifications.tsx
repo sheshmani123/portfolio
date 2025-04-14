@@ -1,6 +1,10 @@
+interface CertificationProps {
+  name: string;
+  link: string;
+}
 
 interface CertificationsProps {
-  certifications: string[];
+  certifications: CertificationProps[];
 }
 
 const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
@@ -9,7 +13,11 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
       <h2 className="text-2xl font-bold mb-4">Certifications</h2>
       <ul>
         {certifications.map((cert, index) => (
-          <li key={index} className="text-muted-foreground">{cert}</li>
+          <li key={index} className="text-muted-foreground">
+            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+              {cert.name}
+            </a>
+          </li>
         ))}
       </ul>
     </section>
