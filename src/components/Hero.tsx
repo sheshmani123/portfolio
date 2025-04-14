@@ -40,18 +40,20 @@ const Hero: React.FC<HeroProps> = ({
   )}?text=Hello, I'm contacting you through your portfolio website.`;
   return (
     <section className="text-center py-12 animate-fade-in relative">
-      {/* Background Overlay */}
-      <div
-        className="absolute inset-0 bg-black opacity-20 z-0"
-        style={{
-          backgroundImage: `url('https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_ratio/1x1_standard_small.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          src="/video/batman.mp4"
+          autoPlay
+          loop
+          muted
+          className="absolute w-auto min-w-full min-h-full max-w-none"
+        />
+        <div className="absolute inset-0 bg-black opacity-40" />
+      </div>
       <div className="relative z-10">
         <Image
-          src="https://res.cloudinary.com/dqrnqfiwn/image/upload/w_150,h_150,c_thumb,g_face/v1718177804/IMG_20240612_154232_qvwb7f.jpg"
+          src="https://res.cloudinary.com/dqrnqfiwn/image/upload/v1718177804/IMG_20240612_154232_qvwb7f.jpg"
           alt="Sheshmani Chauhdary"
           width={150}
           height={150}
