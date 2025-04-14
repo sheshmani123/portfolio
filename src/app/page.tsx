@@ -17,7 +17,7 @@ export default function Home() {
     title: 'Full-Stack Web Developer',
     phone: '+91 9696995616',
     email: 'sheshmanic952@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/sheshmani-chauhary-891878266/',
+    linkedin: 'https://www.linkedin.com/in/sheshmani-chaudhary-942659318/',
     github: 'https://github.com/sheshmani123',
     leetcode: 'https://leetcode.com/u/user2023Jx/',
     gfg: 'https://geeksforgeeks.org/user/sheshmaniecq0/',
