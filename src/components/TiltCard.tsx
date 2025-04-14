@@ -56,4 +56,3 @@ const TiltCard: React.FC<TiltCardProps> = ({ children }) => {
 };
 
 export default TiltCard;
-
