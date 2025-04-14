@@ -97,7 +97,7 @@ I'm always learning, building, and creating — whether it's through code or con
   }, []);
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 ">
       <Hero {...heroData} />
       <About aboutMe={aboutMe} />
       <Skills {...skillsData} />
